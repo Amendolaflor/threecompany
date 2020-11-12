@@ -9,6 +9,13 @@ body {
   body h1 {
     font-size: xx-large;
     font-weight: normal; }
+  body h2 {
+    font-size: 30px;
+    font-weight: normal; }
+  body p {
+    text-indent: 1em; }
+    body p strong {
+      color: #3a1515; }
 
 /* ESTILOS MENU DE NAVEGACION */
 #barraMenu {
@@ -46,9 +53,9 @@ body {
   .pie .pie__cont-texto {
     margin: 0;
     width: 20%; }
-    .pie .pie__cont-texto .pie__p {
+    .pie .pie__cont-texto .pie__nombre {
       font-size: smaller; }
-      .pie .pie__cont-texto .pie__p .pie__cont-redes {
+      .pie .pie__cont-texto .pie__nombre .pie__cont-redes {
         margin: 0;
         width: 30%;
         justify-content: space-around; }
@@ -68,13 +75,13 @@ body {
 /* ESTILOS ABOUT*/
 .hijosStaff {
   justify-content: center;
-  font-weight: bold;
+  font-weight: normal;
   font-size: larger; }
 
 #imagenStaff {
   width: 100%; }
 
-#mainAbout {
+.mainAbout {
   font-size: larger;
   line-height: 150%;
   text-align: justify; }
@@ -82,7 +89,7 @@ body {
 /* ESTILOS PRODUCTS */
 /* ESTILOS GALLERY */
 .imagenGaleria {
-  width: 250px; }
+  width: 18em; }
 
 #flexGaleria {
   display: flex;
@@ -90,7 +97,9 @@ body {
   list-style: none;
   justify-content: space-around;
   align-items: center;
-  margin: auto; }
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 3%; }
 
 .liFlexHijo {
   margin-bottom: 5%; }

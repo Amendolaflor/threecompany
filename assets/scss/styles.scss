@@ -12,17 +12,25 @@ $sombra:rgba(0, 0, 0, 0);
 
 /* ESTILOS BASICOS */
 body {
-  background-color: $blanco-fondo;
-  color: $gris-oscuro;
-  font-weight: normal;
-  font-family: 'Quicksand', sans-serif;
-  margin: 0;
-
-  h1 {
-  font-size: xx-large;
-  font-weight: normal; }
- }
-
+	background-color: $blanco-fondo;
+	color: $gris-oscuro;
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	h1 {
+		font-size: xx-large;
+		font-weight: normal; }
+	h2 {
+		font-size: 30px; 
+		font-weight: normal; }
+	p {
+		text-indent: 1em;		
+	strong {
+		color: $bordo;	
+	}		
+  }
+}
+ 
 /* ESTILOS MENU DE NAVEGACION */
 #barraMenu {
   background-color: $gris-nav;
@@ -30,7 +38,7 @@ body {
   .nav-link {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-  }
+ }
 }
 
 .nav-link {
@@ -63,7 +71,7 @@ body {
     margin: 0;
     width: 20%;
    
-    .pie__p {
+    .pie__nombre {
       font-size: smaller;
 
   .pie__cont-redes {
@@ -89,13 +97,13 @@ body {
 /* ESTILOS ABOUT*/
 .hijosStaff {
   justify-content: center;
-  font-weight: bold;
+  font-weight: normal;
   font-size: larger; }
 
 #imagenStaff {
   width: 100%; }
 
-#mainAbout {
+.mainAbout {
   font-size: larger;
   line-height: 150%;
   text-align: justify; }
@@ -105,7 +113,7 @@ body {
 
 /* ESTILOS GALLERY */
 .imagenGaleria {
-  width: 250px; }
+  width: 18em; }
 
 #flexGaleria {
   display: flex;
@@ -113,7 +121,10 @@ body {
   list-style: none;
   justify-content: space-around;
   align-items: center;
-  margin: auto; }
+  margin: 0;
+  padding-top: 5%; 
+  padding-bottom: 3%;
+}
 
 .liFlexHijo {
   margin-bottom: 5%; }
