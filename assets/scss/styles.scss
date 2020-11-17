@@ -6,8 +6,8 @@ $gris-borde:#c2c8ca;
 $gris2: #333;
 $bordo: #3a1515;
 $texto-pie: rgba(175, 165, 165, 0.712);
-$verde-oscuro: #297026;
-$verde-claro: #66944b;
+$gris3:  rgb(158, 160, 159); 
+$bordo-claro: #553333;
 $sombra:rgba(0, 0, 0, 0);
 
 /* ESTILOS BASICOS */
@@ -55,7 +55,7 @@ body {
   /* Hack to improve aliasing on mobile/tablet devices */
   
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-  box-shadow: inset 0 0 0 2px $gris-borde, 0 0 1px $sombra; }
+  box-shadow: inset 0 0 0 1px $gris-borde, 0 0 1px $sombra; }
   /* Hack to improve aliasing on mobile/tablet devices */
 
 /* ESTILOS PIE */
@@ -104,7 +104,7 @@ body {
   width: 100%; }
 
 .mainAbout {
-  font-size: larger;
+  font-size: normal;
   line-height: 150%;
   text-align: justify; }
 
@@ -153,7 +153,7 @@ body {
     box-sizing: border-box }
 
 input, textarea, button {
-	color: $gris2;
+	color: $gris3;
 	font-size: 13px; }
 
 a:hover {
@@ -178,8 +178,8 @@ a:hover {
 	margin-left: 5%;
 	h3 {
 		font-size: 20px;
-		color: $verde-oscuro;
-		font-weight: bold;
+		color: $gris2;
+		font-weight: normal;
 		text-align: center;
 		padding-top: 20px;
 		margin-bottom: 32px;
@@ -207,6 +207,7 @@ form {
 }
 
 .form-wrapper {
+	color: $gris2;
 	margin-bottom: 17px;
 	label {
 		margin-bottom: 9px;
@@ -214,14 +215,8 @@ form {
 	}
 }
 
-.form-control {
-	border: 1,5px solid $gris-borde;
-	display: block;
-	width: 100%;
-	height: 40px;
-	padding: 0 20px;
-	border-radius: 20px;
-	background:none;
+.form-control{
+	border: 1px solid $gris-borde;
 	&:focus {
 		border: 1px solid $bordo;
 	}
@@ -238,11 +233,11 @@ form {
 	align-items: center;
 	justify-content: center;
 	padding: 0;
-	background: $verde-oscuro;
+	background: $bordo;
 	font-size: 13px;
 	color: $blanco-fondo;
 	text-transform: uppercase;
-	border-radius: 20px;
+	border-radius: 5px;
 	overflow: hidden;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -260,7 +255,7 @@ form {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: $verde-claro;
+		background: $bordo-claro;
 		-webkit-transform: scaleX(0);
 		transform: scaleX(0);
 		-webkit-transform-origin: 0 50%;
