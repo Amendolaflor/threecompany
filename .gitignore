@@ -1,7 +1,4 @@
-node_modules/
-
-.package
-
-.package-lock
-
-img/
+/node_modules
+/package-lock.json
+/package.json
+/assets/img
