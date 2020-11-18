@@ -1,7 +1,8 @@
 /* VARIABLES COLORES*/
+
 $blanco-fondo: #fdfff9;
 $gris-oscuro: #353333;
-$gris-nav: rgba(226, 231, 229, 0.712);
+$gris-nav: rgb(226, 231, 229);
 $gris-borde:#c2c8ca;
 $gris2: #333;
 $bordo: #3a1515;
@@ -11,6 +12,7 @@ $bordo-claro: #553333;
 $sombra:rgba(0, 0, 0, 0);
 
 /* ESTILOS BASICOS */
+
 body {
 	background-color: $blanco-fondo;
 	color: $gris-oscuro;
@@ -32,6 +34,7 @@ body {
 }
  
 /* ESTILOS MENU DE NAVEGACION */
+
 #barraMenu {
   background-color: $gris-nav;
   /*rgba(246, 250, 249, 0.712);*/
@@ -59,30 +62,42 @@ body {
   /* Hack to improve aliasing on mobile/tablet devices */
 
 /* ESTILOS PIE */
-.pie {
-  display: flex;
-  justify-content: space-around;
-  height: 150px;
-  padding-top: 20px;
-  background-color: $bordo;
-  color: $texto-pie;
-  
-  .pie__cont-texto {
-    margin: 0;
-    width: 20%;
-   
-    .pie__nombre {
-      font-size: smaller;
+ 
+.footer {
+	background-color: $bordo;
+	color: $blanco-fondo;
+	font-size: smaller;
+	padding-top: 50px;
+	
 
-  .pie__cont-redes {
-    margin: 0;
-    width: 30%;
-    justify-content: space-around;  }
-  }
- } 
+
+	.flex-redes {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;	 
+		padding-top: 0%;
+		padding-bottom: 10%;
+	}
+
+	.links {
+		ul {list-style-type: none;}
+		li a{
+			color: white;
+			transition: color .2s;
+			&:hover{
+				text-decoration:none;
+				color:$texto-pie;
+				}
+		}
+	} 
+	.copyright p {
+		border-top:1px solid rgba(255,255,255,.1);
+		padding-bottom: 40px;
+	} 
 }
 
 /* ESTILOS INDEX */
+
 #indexImagen {
   width: 100%; }
 
@@ -95,13 +110,14 @@ body {
   padding-bottom: 0%; }
 
 /* ESTILOS ABOUT*/
+
 .hijosStaff {
   justify-content: center;
   font-weight: normal;
   font-size: larger; }
 
 #imagenStaff {
-  width: 100%; }
+  width: 80%; }
 
 .mainAbout {
   font-size: normal;
@@ -112,6 +128,7 @@ body {
 
 
 /* ESTILOS GALLERY */
+
 .imagenGaleria {
   width: 18em; }
 
@@ -124,6 +141,7 @@ body {
   margin: 0;
   padding-top: 5%; 
   padding-bottom: 3%;
+  padding-left: 0%;
 }
 
 .liFlexHijo {
@@ -301,6 +319,22 @@ form {
 		padding-right: 15px;
         padding-left: 15px;
 	}
+	#flexGaleria {
+		padding: 8%; 
+	}
+	.imagenGaleria {
+		width: 100%;
+	}
+	.liFlexHijo {
+		margin-bottom: 8%;
+	}
+	#containerfotosStaff {
+		padding-left:10%;
+		padding-right: 10%;
+		#imagenStaff {
+		width: 100%; }
+	}
+	.flex-redes	{
+		padding: 0%; 
+	}
 }
-
-
