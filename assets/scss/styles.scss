@@ -98,6 +98,42 @@ body {
 
 /* ESTILOS INDEX */
 
+/* make active item container fill height of viewport using flexbox */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    flex: 1 0 100%;
+}
+
+/* fix transitioning item height */
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right,
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+    flex: 0 0 0;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;	
+}
+
+.img-1 {
+    background-image: url('../img/imagenindex.jpg');
+}
+
+.img-2 {
+    background-image: url('../img/imagenindex1.jpg');
+}
+
+.img-3 {
+    background-image: url('../img/imagenindex1n.jpg');
+}
+
+
+
+
 #indexImagen {
   width: 100%; }
 
@@ -295,8 +331,11 @@ form {
 	}
 }
 
-@media (max-width: 1199px) { 	
-  	
+@media (max-width: 1199px) { 
+	#titulopagina {
+		font-size: 100px;
+	}	
+	 	
 }
 
 @media (max-width: 991px) {
@@ -337,4 +376,6 @@ form {
 	.flex-redes	{
 		padding: 0%; 
 	}
+	
+	
 }
