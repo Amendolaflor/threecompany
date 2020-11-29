@@ -18,6 +18,9 @@ body {
       color: #3a1515; }
 
 /* ESTILOS MENU DE NAVEGACION */
+.sticky-top {
+  position: sticky; }
+
 #barraMenu {
   background-color: #e2e7e5;
   /*rgba(246, 250, 249, 0.712);*/ }
@@ -80,6 +83,9 @@ body {
 .active.carousel-item-left {
   flex: 0 0 0; }
 
+#carousel {
+  padding-top: 0% !important; }
+
 .carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +107,6 @@ body {
   padding-bottom: 10px; }
 
 #tituloPagina {
-  font-size: 200%;
   margin: 0;
   padding-bottom: 0%; }
 
@@ -271,17 +276,23 @@ form {
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
 
-@media (max-width: 1199px) {
-  #titulopagina {
-    font-size: 100px; } }
+@media (max-width: 1800px) {
+  #tituloPagina {
+    font-size: 60px; }
+  .carousel-caption h5 {
+    font-size: 40px; } }
 
-@media (max-width: 991px) {
-  .inner {
-    min-width: 768px; } }
+@media (max-width: 900px) {
+  #tituloPagina {
+    font-size: 50px; }
+  .carousel-caption h5 {
+    font-size: 30px; } }
 
 @media (max-width: 500px) {
-  .wrapper {
-    background-image: none; }
+  #tituloPagina {
+    font-size: 40px; }
+  .carousel-caption h5 {
+    font-size: 30px; }
   .inner {
     min-width: auto;
     padding-top: 0;
