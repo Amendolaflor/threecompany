@@ -34,6 +34,10 @@ body {
 }
  
 /* ESTILOS BARRA DE NAVEGACION */
+#barraMenu {
+	position: sticky;
+	z-index: -2;
+}
 
 #barraMenu {
   background-color: $gris-nav;
@@ -136,7 +140,8 @@ main {
 
 	.fas, .far {
   		font-size: 5em;
-  		color: $bordo; 
+		  color: $bordo; 
+		  padding-bottom: 20px;
 	}
 
 	.pilares {
@@ -149,6 +154,7 @@ main {
 .card-deck {
 	margin-top: 50px;
 }
+
 .card{
   margin: 5% 0%;
 }
@@ -156,6 +162,7 @@ main {
 .card-area {
 	margin-bottom: 30px;
 }
+
 .card-body{
   margin: 0% 0% 0% 3%;
   padding: 0;    
@@ -202,7 +209,6 @@ section {
 		margin-bottom: 30px; }
 
 	.flex-hijo_imagen {
-		width: 18em;
 		border-radius:2px;
 		display: inline-block;
 		vertical-align: middle;
@@ -352,37 +358,43 @@ form {
 	}
 }
 
-@media (max-width: 1800px) {
-	
+@media (max-width: 1800px) {	
 	#tituloPagina  {
-		font-size: 50px;
+		font-size: 60px;
+		padding-bottom: 10px;
 		
 	}
 	.carousel-caption h5 {
 		font-size: 40px;
+		padding-bottom: 20px;
 	}
-
+	.flex-hijo_imagen {
+		width: 18em;
+	}	
 } 
 
 @media (max-width: 900px) {
 	#tituloPagina  {
-		font-size: 40px;
+		font-size: 45px;
+		padding-bottom: 30px;
 	}
 	.carousel-caption h5 {
-		font-size: 30px;
-	}
+		font-size: 35px;
+		padding-bottom: 30px;
+	}	
 }
 
-@media (max-width: 500px) {
-	
+@media (max-width: 500px) {	
 	#tituloPagina  {
-		font-size: 30px;
+		font-size: 38px;
+		font-weight: 500;
+		padding-bottom: 30px;
 		
 	}
-	.carousel-caption h5 {
-		font-size: 25px;
+	.carousel-caption h5{
+		font-size: 30px;
+		padding-bottom: 30px;
 	}
-	
 	.inner {
 		min-width: auto;
 		padding-top: 0;
@@ -393,25 +405,11 @@ form {
 		padding-right: 15px;
         padding-left: 15px;
 	}
-	#flexGaleria {
-		padding: 8%; 
-	}
-	.imagenGaleria {
-		width: 100%;
-	}
-	.liFlexHijo {
-		margin-bottom: 8%;
-	}
-	#containerfotosStaff {
-		padding-left:10%;
-		padding-right: 10%;
-		#imagenStaff {
-		width: 100%; }
-	}
 	.flex-redes	{
 		padding: 0%; 
 	}
-	
-	
+	.flex-hijo_imagen {
+		width: 21em;
+	}
 }
 
