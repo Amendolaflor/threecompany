@@ -310,11 +310,11 @@ form {
 
 @media (max-width: 500px) {
   #tituloPagina {
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 500;
     padding-bottom: 30px; }
   .carousel-caption h5 {
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 30px; }
   .inner {
     min-width: auto;
