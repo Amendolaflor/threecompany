@@ -1,8 +1,8 @@
 /* VARIABLES COLORES*/
 
-$blanco-fondo: #fdfff9;
+$blanco-fondo: rgb(233, 233, 233);
 $gris-oscuro: #353333;
-$gris-nav: rgb(226, 231, 229);
+$gris-nav: white;
 $gris-borde:#c2c8ca;
 $gris2: #333;
 $bordo: #3a1515;
@@ -358,7 +358,7 @@ form {
 	}
 }
 
-@media (max-width: 1800px) {	
+@media (max-width: 2300px) {	
 	#tituloPagina  {
 		font-size: 60px;
 		padding-bottom: 10px;
@@ -369,7 +369,7 @@ form {
 		padding-bottom: 20px;
 	}
 	.flex-hijo_imagen {
-		width: 18em;
+		width: 30em;
 	}	
 } 
 
